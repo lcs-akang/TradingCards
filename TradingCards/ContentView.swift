@@ -45,7 +45,28 @@ struct ContentView: View {
                 Spacer()
                     .frame(height:120)
             }
-            
+            VStack {
+                Spacer()
+                    .frame(height: 275)
+                HStack {
+                    Image("England")
+                        .resizable()
+                        .frame(width: 80, height: 45)
+                    Spacer()
+                        .frame(width: 160)
+                }
+            }
+            VStack {
+                Spacer()
+                    .frame(height: 270)
+                HStack {
+                    Spacer()
+                        .frame(width: 190)
+                    Image("LCFC")
+                            .resizable()
+                        .frame(width: 100, height: 100)
+                }
+            }
         }
     }
     
