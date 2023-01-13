@@ -67,6 +67,35 @@ struct ContentView: View {
                         .frame(width: 100, height: 100)
                 }
             }
+            VStack {
+                Spacer()
+                    .frame(height: 425)
+                Text("CAM #10")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .bold()
+            }
+            VStack {
+                Spacer()
+                    .frame(height:480)
+                HStack {
+                    Spacer()
+                        .frame(width: 20)
+                    VStack {
+                        Text("Season Stats")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    Spacer()
+                        .frame(width: 20)
+                    VStack {
+                        Text("Career Trophies")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        
+                    }
+                }
+            }
         }
     }
     
