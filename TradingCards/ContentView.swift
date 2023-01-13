@@ -77,22 +77,46 @@ struct ContentView: View {
             }
             VStack {
                 Spacer()
-                    .frame(height:480)
+                
                 HStack {
                     Spacer()
                         .frame(width: 20)
-                    VStack {
-                        Text("Season Stats")
+                    VStack(spacing: 5) {
+                        
+                        Text("Current Season")
                             .foregroundColor(.white)
                             .font(.headline)
+                            .underline()
+                        Text("Matches Played: 14")
+                            .foregroundColor(.white)
+                        Text("Goals: 7")
+                            .foregroundColor(.white)
+                        Text("Assists: 4")
+                            .foregroundColor(.white)
+                        Text("Yellow Cards: 5")
+                            .foregroundColor(.white)
+                        Text("Red Cards: 0")
+                            .foregroundColor(.white)
                     }
                     Spacer()
                         .frame(width: 20)
-                    VStack {
-                        Text("Career Trophies")
+                    VStack(spacing:5) {
+                        
+                        Text("Career Stats")
                             .foregroundColor(.white)
                             .font(.headline)
-                        
+                            .underline()
+                        Text("Matches Played: 290")
+                            .foregroundColor(.white)
+                        Text("Goals: 75")
+                            .foregroundColor(.white)
+                        Text("Assists: 56")
+                            .foregroundColor(.white)
+                        Text("Yellow Cards: 38")
+                            .foregroundColor(.white)
+                        Text("Red Cards: 2")
+                            .foregroundColor(.white)
+                            
                     }
                 }
             }
