@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let player: LCFCPlayer
+    
     var body: some View {
+        
         ZStack {
             Color.blue
                 .ignoresSafeArea()
@@ -87,7 +91,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .underline()
-                        Text("Matches Played: 14")
+                        Text("Matches: 14")
                             .foregroundColor(.white)
                         Text("Goals: 7")
                             .foregroundColor(.white)
@@ -106,7 +110,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .font(.headline)
                             .underline()
-                        Text("Matches Played: 290")
+                        Text("Matches: 290")
                             .foregroundColor(.white)
                         Text("Goals: 75")
                             .foregroundColor(.white)
@@ -125,7 +129,7 @@ struct ContentView: View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            ContentView(player: jamesMaddison)
         }
     }
 }
